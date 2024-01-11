@@ -1,0 +1,25 @@
+﻿<Window x:Class="messengerClient.ClientMax"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClientMax" Height="450" Width="800">
+    <Grid>
+        <StackPanel Grid.Column="1">
+            <ScrollViewer Height="399" HorizontalAlignment="Stretch" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+                <StackPanel Name="chatWindow">
+                    
+                 <!-- список сообщений чата -->
+                    <!-- <StackPanel>
+                        <TextBlock FontWeight="Bold" Text="nameUser" FontSize="10"/>
+                        <TextBlock TextWrapping="Wrap" Text="textMessage" HorizontalAlignment="Stretch" FontSize="20"/>
+                    </StackPanel> -->
+                    
+                </StackPanel>
+            </ScrollViewer>
+                <!-- область ввода сообщений и кнопка отправки сообщения -->
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <TextBox x:Name="messageInput" Width="500" Margin="10"/>
+                <Button x:Name="EnterMessage" Click="Enter_Click" Content="отправить" Width="80" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
